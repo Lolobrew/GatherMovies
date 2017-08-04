@@ -1,5 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
   var MovieTitles = sequelize.define("MovieTitles", {
+      //gives MovieTitles a title
     title: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -9,6 +10,7 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
+  //foreign key for MovieTitles(UsersID)
   MovieTitles.associate = function(models) {
     // We're saying that a MovieTitle should belong to a User
     // A MovieTitle can't be created without an User due to the foreign key constraint
