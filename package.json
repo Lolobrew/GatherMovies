@@ -1,0 +1,22 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "Project2 Collections Website",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "method-override": "^2.3.9",
+    "mysql2": "^1.4.0",
+    "path": "^0.12.7",
+    "sequelize": "^4.4.2",
+    "sequelize-cli": "^2.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Drew, Jalil, Jeff S",
+  "license": "ISC"
+}
