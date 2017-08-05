@@ -1,26 +1,18 @@
 module.exports = function(sequelize, DataTypes) {
-  var MovieTitles = sequelize.define("MovieTitles", {
-      //gives MovieTitles a title
-    title: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [1]
-      }
-    }
+  var MovieID = sequelize.define("MovieID", {
   });
 
   //foreign key for MovieTitles(UsersID)
-  MovieTitles.associate = function(models) {
+  MovieID.associate = function(models) {
     // We're saying that a MovieTitle should belong to a User
     // A MovieTitle can't be created without an User due to the foreign key constraint
-    MovieTitles.belongsTo(models.Users, {
+    MovieID.belongsTo(models.Users, {
       foreignKey: {
         allowNull: false
       }
     });
     //A MovieTitles has attributes from a FullMovie
-    MovieTitles.hasMany(models.FullMovies, {
+    MovieID.hasOne(models.FullMovies, {
         foreignKey: {
             allowNull: false
         }
@@ -28,5 +20,5 @@ module.exports = function(sequelize, DataTypes) {
 
   };
 
-  return MovieTitles;
+  return MovieID;
 };
