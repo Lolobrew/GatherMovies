@@ -14,7 +14,7 @@ module.exports = function(sequelize, DataTypes) {
   Users.associate = function(models) {
     // Associating User with MovieTitles
     // When an Author is deleted, also delete any associated MovieTitles
-    Users.hasMany(models.MovieTitles, {
+    Users.hasMany(models.MovieID, {
       onDelete: "cascade"
     });
   };
