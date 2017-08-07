@@ -12,7 +12,11 @@
 	<!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--Google Fonts VT323 -->
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <!--custom css -->
     <link rel="stylesheet" type="text/css" href="assets/css/login.css">
 
@@ -20,20 +24,102 @@
 
 <body>
     <div class="container-flex">
-        <nav class="navbar navbar-light bg-faded">
-            <h1 class="navbar-brand mb-0">Navbar</h1>
-        </nav>
-        <footer>
-        <!--Copyright-->
-            <div class="footer-copyright">
-                <div class="containter-fluid">
-                    © 2017 Copyright: Drew, Jalil, and Jeff </a>
+        <div class="row animated flipInX">
+            <nav class="navbar navbar-light bg-faded">
+                <h2 class="navbar-brand mb-0">#Website Name!</h2>
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="home.html">Home</a></li>
+                    <li role="presentation" class="active" id="loginTab"><a href="login.html">Login</a></li>
+                    <li role="presentation"><a href="userpage.html">UserPage</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container-flex logindiv animated fadeIn">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-2">
+                    <div class-"form-group">
+                        <label for="userName">Name: </label>
+                        <input type="text" class="form-control" id="userName">
+                        <br>
+                        <label for="passWord">Password: </label>
+                        <input type="password" class="form-control" id="passWord">
+                    </div>
                 </div>
             </div>
-        <!--/.Copyright-->
-        </footer>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-5">
+                    <button class="btn btn-md" id="logInBtn" type="button"><i class="fa fa-sign-in" aria-hidden="true"></i>  Log In</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-flex quotesdiv">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-1 animated fadeInDown">
+                    <h1><small>Fire Up The Quotes! <br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active animated lightSpeedIn col-lg-8 col-lg-offset-2 quotebox">
+                            <p>You've got to ask yourself one question: 'Do I feel lucky?' Well, do ya, punk?<br>
+                            -Dirty Harry</p>
+                        </div>
+                        <div class="item animated lightSpeedIn col-lg-8 col-lg-offset-2 quotebox">
+                            <p>And cause I was a gazillionaire, and I liked doing it so much, I cut that grass for free.<br>
+                            -Forrest Gump</p>
+                        </div>
+                        <div class="item animated lightSpeedIn col-lg-8 col-lg-offset-2 quotebox">
+                            <p>Carpe diem. Seize the day, boys. Make your lives extraordinary.<br>
+                            -Dead Poets Society</p>
+                        </div>
+                        <div class="item animated lightSpeedIn col-lg-8 col-lg-offset-2 quotebox">
+                            <p>We're going to play a wonderful game called.. Who is my Daddy and what does he do?<br>
+                            -Kindergarten Cop</p>
+                        </div>
+                        <div class="item animated lightSpeedIn col-lg-8 col-lg-offset-2 quotebox">
+                            <p>Gentlemen, you can't fight in here! This is the War Room!<br>
+                            -Dr. Stranglove</p>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+
+
+        <div class="row">
+            <footer>
+            <!--Copyright-->
+                <div class="footer-copyright">
+                    <div class="containter-fluid">
+                      <p>© 2017 Copyright: Drew, Jalil, and Jeff</p>
+                    </div>
+                </div>
+            <!--/.Copyright-->
+            </footer>
+        </div>
+        
     </div>
 
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+        $('.carousel').carousel();
+    </script>
 
     
 </body>

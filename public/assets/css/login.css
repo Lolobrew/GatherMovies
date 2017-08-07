@@ -1,0 +1,50 @@
+.navbar {
+    margin-left: 3%;
+}
+
+ul{
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 13%;
+    font-size: 20px;
+    border-color: lightsteelblue;
+}
+
+li a {
+    color: #FE0114;
+}
+
+
+.logindiv {
+    margin-top: 2%;
+}
+
+button {
+    color: #FE0114;
+}
+
+.quotesdiv {
+    margin-top: 7.5%;
+}
+
+.quotebox {
+    background: url("../images/blank.jpg");
+    text-align: justify;
+    font-family: 'VT323', monospace;
+    font-size: 32px;
+}
+
+.quotebox p {
+    margin-left: 4%;
+}
+
+footer {
+    margin-top: 7.5%;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 2%;
+    font-size: 14px;
+}
