@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<title>Welcome to #website</title>
+
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--custom css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/userpage.css">
+
+</head>
+
+<body>
+    <div class="container-flex">
+        <div class="row animated flipInX">
+            <nav class="navbar navbar-light bg-faded">
+                <h2 class="navbar-brand mb-0">#Website Name!</h2>
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="home.html">Home</a></li>
+                    <li role="presentation" id="loginTab"><a href="login.html">Login</a></li>
+                    <li role="presentation" class="active"><a href="userpage.html">UserPage</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container-flex searchdiv animated fadeIn">
+            <div class="row searchrow">
+                <div class="col-lg-6 col-lg-offset-2">
+                    <label for="searchByTitle">Find a Movie By Title: </label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchByTitle">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" id="searchButton" type="button"><i class="fa fa-search" aria-hidden="true"></i>  Search</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row displaySearchRow">
+                <div class="col-lg-12 col-lg-offset-1" id="displaySearchDiv">
+                    <!--display searched for movie here after searching... -->
+                    <!-- dynamically create a button after the movie info is diplayed to add the movie to the database -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Your movies div -->
+        <div class="container-flex yourmoviesdiv">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-1">
+                    <h3>Your current movies <small>Oh yeah!</small></h3>
+                </div>
+            </div>
+            <div class="row displayCurrentRow">
+                <div class="col-lg-12 col-lg-offset-1" id="displayCurrentDiv">
+                    <!--display movies from database here, might need to display each in separate row, or in block format (as ul?) -->
+                    <!--write JavaScript so that when a movie is clicked on the information from the db on that movie slides out in a new div (using .hide() and .show() ? )-->
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+            <footer>
+            <!--Copyright-->
+                <div class="footer-copyright">
+                    <div class="containter-fluid">
+                       <p>© 2017 Copyright: Drew, Jalil, and Jeff </p>
+                    </div>
+                </div>
+            <!--/.Copyright-->
+            </footer>
+        </div>
+        
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- script tag here for page JavaScript -->
+
+    
+</body>
+</html>

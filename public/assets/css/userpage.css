@@ -1,0 +1,39 @@
+.navbar {
+    margin-left: 3%;
+}
+
+ul{
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 13%;
+    font-size: 20px;
+    border-color: lightsteelblue;
+}
+
+li a {
+    color: #FE0114;
+}
+
+
+.searchdiv {
+    margin-top: 2%;
+}
+
+.yourmoviesdiv  {
+    margin-top: 10%;
+}
+
+.yourmoviesdiv h3 {
+    color: #FE0114;
+}
+
+footer {
+    margin-top: 20%;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 2%;
+    font-size: 14px;
+}

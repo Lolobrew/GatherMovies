@@ -31,5 +31,6 @@ CREATE TABLE fullMovies
     runTime varchar(50) NOT NULL,
     director varchar(100) NOT NULL,
     actors varchar(400) NOT NULL,
+    poster varchar(512) NOT NULL,
     PRIMARY KEY (id)
 );
