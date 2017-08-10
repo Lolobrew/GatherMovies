@@ -9,7 +9,7 @@ $('#logInBtn').on('click', function(event){
 
     for (i = 0; i < userArr.length; i++){
         if(name === userArr[i] && password === passArr[i]){
-            alert("This is working");
+            $.get("/users");
             //instead of alert() this is where we will instead open the user unique page!!
         }
     }
