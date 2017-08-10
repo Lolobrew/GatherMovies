@@ -1,4 +1,4 @@
-USE movies_db;
+USE moviesdb;
 INSERT INTO users (name, userName) VALUES ('Drew', 'MonsterMetroid');
 INSERT INTO users (name, userName) VALUES ('Jalil', 'JalilAkhtar');
 INSERT INTO users (name, userName) VALUES ('Jeff', 'LoloBrew');
