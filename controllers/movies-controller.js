@@ -7,7 +7,7 @@ var model = require ("../models");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-  res.redirect('/movies');
+  res.redirect('/home.html');
 });
 
 
