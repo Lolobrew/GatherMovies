@@ -8,7 +8,7 @@ $('#logInBtn').on('click', function(event){
     var password = $('#passWord').val().trim();
 
     for (i = 0; i < userArr.length; i++){
-        if(name === userArr[i] && password === userArr[i]){
+        if(name === userArr[i] && password === passArr[i]){
             alert("This is working");
             //instead of alert() this is where we will instead open the user unique page!!
         }
