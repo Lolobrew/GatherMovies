@@ -8,7 +8,7 @@ CREATE TABLE users
 (
 	id int NOT NULL AUTO_INCREMENT,
 	name varchar(255) NOT NULL,
-	user_name varchar(200) NOT NULL,
+	userName varchar(200) NOT NULL,
     date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (id)
 );
