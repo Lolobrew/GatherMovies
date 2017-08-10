@@ -67,10 +67,10 @@ module.exports = function(sequelize, DataTypes) {
 
   });
 
-    //foreign key for FullMovies (MovieTitlesID)
+    //foreign key for FullMovies (userId)
   FullMovies.associate = function(models) {
-    // We're saying that FullMovies should belong to a MovieTitle
-    FullMovies.belongsTo(models.Movieids, {
+    // We're saying that FullMovies should belong to a User
+    FullMovies.belongsTo(models.Users, {
       foreignKey: {
         allowNull: false
       }

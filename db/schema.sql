@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS movies_db;
 
 CREATE DATABASE movies_db;
 
-USE movies_db;
+USE moviesdb;
 
 CREATE TABLE users
 (
@@ -11,13 +11,6 @@ CREATE TABLE users
 	userName varchar(200) NOT NULL,
     date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (id)
-);
-
-CREATE TABLE movieids
-(
-    id int NOT NULL AUTO_INCREMENT,
-    date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    PRIMARY KEY (id)
 );
 
 CREATE TABLE fullMovies
