@@ -16,7 +16,7 @@ module.exports = function(sequelize, DataTypes) {
         }
     },
     plot: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
         validate: {
             len: [10]
