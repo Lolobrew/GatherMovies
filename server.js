@@ -19,7 +19,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 
 // Import routes and give the server access to them.
-var routes = require("./controllers/movies-controller.js");
+require("./routes/html-routes.js")(app);
+require("./routes/user-api-routes.js")(app);
 
 app.use("/", routes);
 
