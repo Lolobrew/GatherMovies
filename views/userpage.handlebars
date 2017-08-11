@@ -1,39 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-	<title>Welcome to Gather</title>
-
-	<!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <!-- Latest compiled and minified CSS (bootstrap) -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <!--custom css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/userpage.css">
-
-</head>
-
-<body>
     <!-- wrapper -->
     <div class="container-flex">
         <!-- navbar -->
         <div class="row animated flipInX">
             <nav class="navbar navbar-light bg-faded">
-                <a class="navbar-brand mb-0" href="home.html">
-                    <img src="assets/images/Gather.png" alt="logo">
+                <a class="navbar-brand mb-0" href="./home">
+                    <img src="{{assets}}/images/Gather.png" alt="logo">
                 </a>
                 <h2 class="navbar-brand mb-0">Gather!</h2>
                 <ul class="nav nav-tabs">
-                    <li role="presentation"><a href="home.html">Home</a></li>
-                    <li role="presentation" id="loginTab"><a href="login.html">Login</a></li>
-                    <li role="presentation" class="active"><a href="userpage.html">UserPage</a></li>
+                    <li role="presentation"><a href="./home">Home</a></li>
+                    <li role="presentation" id="loginTab"><a href="./login">Login</a></li>
+                    <li role="presentation" class="active"><a href="./users">UserPage</a></li>
                 </ul>
             </nav>
         </div>
@@ -69,6 +47,9 @@
             </div>
             <div class="row displayCurrentRow">
                 <div class="col-lg-12 col-lg-offset-1" id="displayCurrentDiv">
+                    {{#each data}}
+                    <img src="data.poster" alt = "movieposter">
+                    {{/each}}
                     <!--display movies from database here, might need to display each in separate row, or in block format (as ul?) -->
                     <!--write JavaScript so that when a movie is clicked on the information from the db on that movie slides out in a new div (using .hide() and .show() ? )-->
                 </div>
@@ -98,8 +79,4 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
-    <!-- script tag here for page JavaScript -->
-
-    
-</body>
-</html>
+    <!-- script tag here for js -->
