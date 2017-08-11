@@ -16,7 +16,7 @@ var mysql = require("mysql");
 //     poster: null
 //   };
 
-var number = "tt3896198";
+var number = "tt0107290";
 request('http://www.omdbapi.com/?i='+number+'&apikey=cee03de1', function(err, response, body) { 
     if(response.statusCode === 200){
     	var movie = JSON.parse(body);
@@ -26,10 +26,10 @@ request('http://www.omdbapi.com/?i='+number+'&apikey=cee03de1', function(err, re
 	    	plot: movie.Plot,
 		    rating: movie.Rated,
 		    year: movie.Year,
-		    runtime: movie.Runtime,
+		    runTime: movie.Runtime,
 		    director: movie.Director,
 		    actors: movie.Actors,
-		    poster: movie.Poster,
+		    poster: movie.Poster
 	  	})
 	    
 
