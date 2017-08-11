@@ -24,6 +24,30 @@ li a {
     margin-top: 2%;
 }
 
+.searchrow {
+    padding-bottom: 20px;
+}
+
+#movieInfo h3 {
+    color: #FE0114;
+}
+
+#searchPlot {
+    font-size: 16px;
+}
+
+#addBtn {
+    color: #FE0114;
+}
+
+#rmvBtn {
+    color: #23527C
+}
+
+#searchButton {
+    color: #FE0114
+}
+
 .yourmoviesdiv  {
     margin-top: 10%;
 }
@@ -32,19 +56,31 @@ li a {
     color: #FE0114;
 }
 
-#searchPoster {
-    height: 100%;
-    width: 100%;
+#currentText {
+    padding-bottom: 20px;
 }
 
-.posterImages {
-    height: 60%;
-    width: 60%;
+
+#displayCurrentRow {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+#searchPoster {
+    height: 300px;
+    width: 200px;
+}
+
+#title {
+    color: #FE0114;
+}
+
+#plotText{
+    font-size: 16px;
 }
 
 footer {
-    margin-top: 20%;
-    border-top: 1px solid #ccc;
     text-align: center;
 }
 

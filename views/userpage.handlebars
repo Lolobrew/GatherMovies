@@ -40,35 +40,46 @@
         <!-- Your movies div -->
         <div class="container-flex yourmoviesdiv">
             <div class="row">
-                <div class="col-lg-6 col-lg-offset-1">
+                <div class="col-lg-6 col-lg-offset-1" id = "currentText">
                     <h3>Your current movies <small>Oh yeah!</small></h3>
                 </div>
             </div>
 
                     {{#each data}}
-                        <div class="col-md-1 col-md-offset-1" id="displayCurrentDiv">
-                            <img src="{{this.dataValues.poster}}" alt = "movieposter" class="posterImages">
+                        <div class="row" id="displayCurrentRow">
+                            <div class="col-md-1 col-md-offset-1" id="displayCurrentPoster">
+                                <img src="{{this.dataValues.poster}}" alt = "movieposter" class="posterImages">
+                            </div>
+                            <div class="col-md-3 col-md-offset-2" id = "displayCurrentTitle"><br><br>
+                                <h2 id="title">{{this.dataValues.title}}</h2>
+                                <p>{{this.dataValues.genre}}</p>
+                                <p>{{this.dataValues.rating}}</p>
+                                <p>{{this.dataValues.year}}</p>
+                                <p>{{this.dataValues.runTime}}</p>
+                                <p>{{this.dataValues.director}}</p>
+                                <p>{{this.dataValues.actors}}</p>
+                            </div>
+                            <div class="col-md-3">
+                                <h5 id="plotText"><br><br><br><br>{{this.dataValues.plot}}</h5>
+                            </div>
                         </div>
                     {{/each}}
                     <!--display movies from database here, might need to display each in separate row, or in block format (as ul?) -->
                     <!--write JavaScript so that when a movie is clicked on the information from the db on that movie slides out in a new div (using .hide() and .show() ? )-->
 
-            </div>
         </div>
 
 
 
 
         <!-- footer -->
-        <div class="row">
-            <footer>
-                <div class="footer-copyright">
-                    <div class="containter-fluid">
-                       <p>© 2017 Copyright: Drew, Jalil, and Jeff </p>
-                    </div>
+        <footer>
+            <div class="footer-copyright">
+                <div class="containter-fluid">
+                   <p>© 2017 Copyright: Drew, Jalil, and Jeff </p>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
 
      <!-- wrapper close -->   
     </div>
