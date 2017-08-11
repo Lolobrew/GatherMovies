@@ -15,6 +15,7 @@ module.exports = function(sequelize, DataTypes) {
     // Associating User with MovieTitles
     // When an Author is deleted, also delete any associated MovieTitles
     Users.hasMany(models.FullMovies, {
+      onDelete: "cascade"
     });
   };
 

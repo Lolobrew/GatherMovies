@@ -15,7 +15,6 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
-  // users route loads userpage.html
   app.get("/users", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/userpage.html"));
   });
