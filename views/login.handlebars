@@ -1,41 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-	<title>Welcome to Gather</title>
-
-	<!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <!-- Latest compiled and minified CSS (bootstrap)-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <!--Google Fonts VT323 -->
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-    <!--custom css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
-
-</head>
-
-<body>
     <!-- wrapper -->
     <div class="container-flex">
         <!-- navbar -->
         <div class="row animated flipInX">
             <nav class="navbar navbar-light bg-faded">
-                <a class="navbar-brand mb-0" href="home.html">
-                    <img src="assets/images/Gather.png" alt="logo">
+                <a class="navbar-brand mb-0" href="./home">
+                    <img src="{{assets}}/images/Gather.png" alt="logo">
                 </a>
                 <h2 class="navbar-brand mb-0">Gather!</h2>
                 <ul class="nav nav-tabs">
-                    <li role="presentation"><a href="home.html">Home</a></li>
-                    <li role="presentation" class="active" id="loginTab"><a href="login.html">Login</a></li>
-                    <li role="presentation"><a href="userpage.html">UserPage</a></li>
+                    <li role="presentation"><a href="./home">Home</a></li>
+                    <li role="presentation" class="active" id="loginTab"><a href="./login">Login</a></li>
+                    <li role="presentation"><a href="./users">UserPage</a></li>
                 </ul>
             </nav>
         </div>
@@ -128,8 +103,4 @@
         $('.carousel').carousel();
     </script>
 
-    <script type="text/javascript" src="assets/javascript/login.js"></script>
-
-    
-</body>
-</html>
+    <script type="text/javascript" src="{{assets}}/javascript/login.js"></script>
