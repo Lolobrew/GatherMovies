@@ -7,8 +7,22 @@ $('#logInBtn').on('click', function(event){
 
     var name = $('#userName').val().trim();
     var password = $('#passWord').val().trim();
+    var id = "";
+
+    switch(name){
+        case "Drew":
+            id = 1
+            break;
+        case "Jalil":
+            id = 2
+            break;
+        case "Jeff":
+            id = 3
+            break;
+    }
+
     var logInPage = function(){
-        window.location.assign("/users/" + name);
+        window.location.assign("/users/" + id);
     }
 
     console.log(name);

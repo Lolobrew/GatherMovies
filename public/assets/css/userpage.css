@@ -32,6 +32,16 @@ li a {
     color: #FE0114;
 }
 
+#searchPoster {
+    height: 100%;
+    width: 100%;
+}
+
+.posterImages {
+    height: 60%;
+    width: 60%;
+}
+
 footer {
     margin-top: 20%;
     border-top: 1px solid #ccc;

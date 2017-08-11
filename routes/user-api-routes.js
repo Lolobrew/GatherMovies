@@ -22,10 +22,9 @@ module.exports = function(app) {
   });
 
 
-
-  app.post("/api/users/:name", function(req, res) {
-    db.Users.create(req.body).then(function(dbUser) {
-      res.json(dbUser);
+  app.post("/api/users/:id", function(req, res) {
+    db.FullMovies.create(req.body).then(function(dbMovie) {
+      res.json(dbMovie);
     });
   });
 

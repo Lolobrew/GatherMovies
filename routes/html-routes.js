@@ -46,18 +46,19 @@ module.exports = function(app) {
   });
 
 
-  app.get("/users/:name", function(req, res){
+  app.get("/users/:id", function(req, res){
     db.Users.findOne({
       where: {
-        name: req.params.name,
+        id: req.params.id,
       },
       include: [db.FullMovies]
     }).then(function(data){
-      console.log(data.FullMovies[0].dataValues.poster);
+      //var posterPath = data.FullMovies[0].dataValues;
       res.render('userpage',
         {
           layout: 'main',
           css: 'userpage.css',
+          data: data.FullMovies
         }
       );
     });

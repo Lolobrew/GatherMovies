@@ -29,11 +29,10 @@
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
             <div class="row displaySearchRow">
-                <div class="col-lg-12 col-lg-offset-1" id="displaySearchDiv">
-                    <!--display searched for movie here after searching... -->
-                    <!-- dynamically create a button after the movie info is diplayed to add the movie to the database -->
-                </div>
+                <!-- append movie info here after Search -->
             </div>
         </div>
 
@@ -45,14 +44,14 @@
                     <h3>Your current movies <small>Oh yeah!</small></h3>
                 </div>
             </div>
-            <div class="row displayCurrentRow">
-                <div class="col-lg-12 col-lg-offset-1" id="displayCurrentDiv">
+
                     {{#each data}}
-                    <img src="data.poster" alt = "movieposter">
+                        <div class="col-md-1 col-md-offset-1" id="displayCurrentDiv">
+                            <img src="{{this.dataValues.poster}}" alt = "movieposter" class="posterImages">
+                        </div>
                     {{/each}}
                     <!--display movies from database here, might need to display each in separate row, or in block format (as ul?) -->
                     <!--write JavaScript so that when a movie is clicked on the information from the db on that movie slides out in a new div (using .hide() and .show() ? )-->
-                </div>
 
             </div>
         </div>
@@ -80,3 +79,4 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
     <!-- script tag here for js -->
+    <script type="text/javascript" src="{{assets}}/javascript/userpage.js"></script>

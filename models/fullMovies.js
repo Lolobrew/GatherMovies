@@ -64,21 +64,18 @@ module.exports = function(sequelize, DataTypes) {
             len: [1]
         }
     }
-  }, {
-    timestamps: false
-
+    
   });
 
     //foreign key for FullMovies (userId)
-  // FullMovies.associate = function(models) {
-  //   // We're saying that FullMovies should belong to a User
-  //   FullMovies.belongsTo(models.Users, {
-  //     foreignKey: {
-  //       allowNull: false
-  //     }
-  //   });
-
-  // };
+    FullMovies.associate = function(models) {
+        // We're saying that FullMovies should belong to a User
+        FullMovies.belongsTo(models.Users, {
+            foreignKey: {
+            allowNull: false
+            }
+        });
+   };
 
   return FullMovies;
 };
