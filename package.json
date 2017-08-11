@@ -8,7 +8,7 @@
     "express": "^4.15.3",
     "method-override": "^2.3.9",
     "mysql2": "^1.4.0",
-    "express-handlebars":"3.0.0",
+    "express-handlebars": "3.0.0",
     "path": "^0.12.7",
     "request": "^2.81.0",
     "sequelize": "^4.4.2",
@@ -20,5 +20,16 @@
     "start": "node server.js"
   },
   "author": "Drew, Jalil, Jeff S",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lolobrew/project2.git"
+  },
+  "keywords": [
+    "movies"
+  ],
+  "bugs": {
+    "url": "https://github.com/Lolobrew/project2/issues"
+  },
+  "homepage": "https://github.com/Lolobrew/project2#readme"
 }
