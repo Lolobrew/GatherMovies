@@ -1,5 +1,5 @@
 var request = require('request');
-var FullMovie = require("../project2/models/fullMovies.js");
+var db = require("./models");
 var mysql = require("mysql");
 
 
@@ -20,7 +20,7 @@ var number = "tt3896198";
 request('http://www.omdbapi.com/?i='+number+'&apikey=cee03de1', function(err, response, body) { 
     if(response.statusCode === 200){
     	var movie = JSON.parse(body);
-    	FullMovie.create({
+    	db.FullMovies.create({
 	    	title: movie.Title,
 	    	genre: movie.Genre,
 	    	plot: movie.Plot,
