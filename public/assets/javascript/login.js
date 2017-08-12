@@ -1,5 +1,5 @@
-var userArr = ["Drew", "Jeff", "Jalil"];
-var passArr = ["Drew", "Jeff", "Jalil"];
+var userArr = ["Drew", "Jeff", "Jalil", "Ricky"];
+var passArr = ["Drew", "Jeff", "Jalil", "Ricky"];
 console.log(window.location.href);
 
 $('#logInBtn').on('click', function(event){
@@ -18,6 +18,9 @@ $('#logInBtn').on('click', function(event){
             break;
         case "Jeff":
             id = 3
+            break;
+        case "Ricky":
+            id = 4
             break;
     }
 
