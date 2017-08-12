@@ -71,7 +71,7 @@ module.exports = function(sequelize, DataTypes) {
     FullMovies.associate = function(models) {
         // We're saying that FullMovies should belong to a User
         FullMovies.belongsTo(models.Users, {
-            foreignKey: {
+            foreignKey: { //value of foreign key? userName
             allowNull: false
             }
         });

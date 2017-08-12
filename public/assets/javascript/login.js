@@ -5,9 +5,10 @@ console.log(window.location.href);
 $('#logInBtn').on('click', function(event){
     event.preventDefault();
 
+        //change to var userName = $('#userName').val().trim();
     var name = $('#userName').val().trim();
     var password = $('#passWord').val().trim();
-    var id = "";
+    var id = ""; //delete
 
     switch(name){
         case "Drew":
@@ -25,11 +26,11 @@ $('#logInBtn').on('click', function(event){
     }
 
     var logInPage = function(){
-        window.location.assign("/users/" + id);
+        window.location.assign("/users/" + id);//change to /users/ + userName
     }
 
     console.log(name);
-    
+    //delete
     for (i = 0; i < userArr.length; i++){
         if(name === userArr[i] && password === passArr[i]){
             logInPage();

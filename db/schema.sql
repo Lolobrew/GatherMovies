@@ -10,7 +10,7 @@ CREATE TABLE users
 	name varchar(255) NOT NULL,
 	userName varchar(200) NOT NULL,
     date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-	PRIMARY KEY (id)
+	PRIMARY KEY (id) /*change primary key to userName*/
 );
 
 CREATE TABLE fullMovies

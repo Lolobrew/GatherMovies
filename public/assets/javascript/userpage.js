@@ -1,7 +1,7 @@
-
+//change to userName
 var userId = window.location.href.substr(window.location.href.lastIndexOf('/') + 1);
 
-console.log(userId);
+console.log(userId); //change to userName
 //window.alert(this.href.substr(this.href.lastIndexOf('/') + 1));
 $('#searchButton').on('click', function(event){
     event.preventDefault();
@@ -50,10 +50,10 @@ $('#searchButton').on('click', function(event){
                             poster: movie.Poster,
                             createdAt: time,
                             updatedAt: time,
-                            UserId: userId
+                            UserId: userId //change foreign key to userName?
                         }
 
-                        
+                            //change post route to /api/users/:userName
                         $.post("/api/users/:id", newMovie, function() {
                         window.location.reload();
                         });

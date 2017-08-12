@@ -45,11 +45,14 @@ module.exports = function(app) {
     );
   });
 
+  //create route for app.get("/createuser") db.Users.create({where: {}})
 
+
+  //change to /users/:userName
   app.get("/users/:id", function(req, res){
     db.Users.findOne({
       where: {
-        id: req.params.id,
+        id: req.params.id, //change to userName: req.params.userName
       },
       include: [db.FullMovies]
     }).then(function(data){
