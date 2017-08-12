@@ -16,7 +16,7 @@ $('#searchButton').on('click', function(event){
         } else {
             console.log(title);
 
-            var queryUrl = 'http://www.omdbapi.com/?t='+title+'&apikey=cee03de1';
+            var queryUrl = 'https://www.omdbapi.com/?t='+title+'&apikey=cee03de1';
 
             $.ajax({url: queryUrl, method: 'GET'}).done(function(response) { 
                     var movie = response;   
