@@ -61,6 +61,12 @@ $('#searchButton').on('click', function(event){
 
                     });
 
+
+                    $('#rmvBtn').on('click', function(event){
+                        event.preventDefault();
+                        $('.displaySearchRow').empty();
+                    };
+
                     
             //closes request    
             });
