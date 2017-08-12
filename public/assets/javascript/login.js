@@ -1,6 +1,6 @@
 var userArr = ["Drew", "Jeff", "Jalil"];
 var passArr = ["Drew", "Jeff", "Jalil"];
-
+console.log(window.location.href);
 
 $('#logInBtn').on('click', function(event){
     event.preventDefault();
