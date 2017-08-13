@@ -9,7 +9,7 @@
                 <h2 class="navbar-brand mb-0">Gather!</h2>
                 <ul class="nav nav-tabs">
                     <li role="presentation"><a href="./home">Home</a></li>
-                    <li role="presentation" class="active" id="loginTab"><a href="./login">Login</a></li>
+                    <li role="presentation" id="loginTab"><a href="./login">Login</a></li>
                     <!--<li role="presentation"><a href="./users">UserPage</a></li>-->
                 </ul>
             </nav>
@@ -20,21 +20,22 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-2">
                     <div class-"form-group">
-                        <label for="userName">Name: </label>
+                        <label for="name">Name: </label>
+                        <input type="text" class="form-control" id="name">
+                        <br>
+                        <label for="userName">User Name: </label>
                         <input type="text" class="form-control" id="userName">
                         <br>
                         <label for="passWord">Password: </label>
                         <input type="password" class="form-control" id="passWord">
                     </div>
-                    <br>
-                    <a href="./adduser">Don't have an account? Create one!</a>
                 </div>
             </div>
             <br>
             <!-- log in button -->
             <div class="row">
                 <div class="col-md-4 col-md-offset-5">
-                    <button class="btn btn-md" id="logInBtn" type="button"><i class="fa fa-sign-in" aria-hidden="true"></i>  Log In</button>
+                    <button class="btn btn-md" id="createBtn" type="button"><i class="fa fa-plus" aria-hidden="true"></i>  Add Account!</button>
                 </div>
             </div>
         </div>
@@ -105,4 +106,4 @@
         $('.carousel').carousel();
     </script>
 
-    <script type="text/javascript" src="{{assets}}/javascript/login.js"></script>
+    <script type="text/javascript" src="{{assets}}/javascript/adduser.js"></script>

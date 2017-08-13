@@ -45,8 +45,15 @@ module.exports = function(app) {
     );
   });
 
-  //create route for app.get("/createuser") db.Users.create({where: {}})
-
+  //create route for app.get("/createuser")
+  app.get("/addusers", function(req, res){
+    res.render("adduserpage",
+      {
+        layout: 'main',
+        css: 'login.css'
+      }
+    );
+  });
 
   //change to /users/:userName
   app.get("/users/:id", function(req, res){

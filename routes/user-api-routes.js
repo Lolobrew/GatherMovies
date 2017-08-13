@@ -21,6 +21,13 @@ module.exports = function(app) {
     });
   });
 
+//db.Users.create(req.body)
+  app.post("/api/users/:userName", function(req, res){
+    db.Users.create(req.body).then(function(dbUsers){
+      res.json(dbUsers)
+    });
+  });
+
 
   app.post("/api/users/:id", function(req, res) {
     db.FullMovies.create(req.body).then(function(dbMovie) {
