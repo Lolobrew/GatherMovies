@@ -9,6 +9,7 @@ CREATE TABLE users
 	id int NOT NULL AUTO_INCREMENT,
 	name varchar(255) NOT NULL,
 	userName varchar(200) NOT NULL,
+    password varchar(100)
     date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	PRIMARY KEY (id)
 );
